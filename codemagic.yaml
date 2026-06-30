@@ -12,8 +12,8 @@ workflows:
     
     # Integrations - required for App Store Connect publishing and code signing
     # NEW API KEY (with Admin access):
-    # - Name: prodoc_api_key_admin
-    # - Key ID: 2SXY3XRQDL
+    # - Name: codemagic
+    # - Key ID: R8CTZW8NMJ
     # - Issuer ID: 24e51026-b46d-49ab-89ba-d7791751dfd5
     # - Access: Admin ✅
     # - Private Key: AuthKey_2SXY3XRQDL.p8 (will be used from repository)
@@ -22,11 +22,11 @@ workflows:
     # OPTION 2: Use environment variables (set in Codemagic UI → Environment variables)
     # OPTION 3: Use files from repository (configured below)
     integrations:
-      app_store_connect: prodoc_api_key_admin  # API key with Admin access (Key ID: 2SXY3XRQDL)
+      app_store_connect: codemagic  # API key with Admin access (Key ID: 2SXY3XRQDL)
     
     # Environment variables (set these in Codemagic UI → Environment variables as backup)
     # If integration doesn't work, these will be used:
-    # - APP_STORE_CONNECT_API_KEY_ID = 2SXY3XRQDL
+    # - APP_STORE_CONNECT_API_KEY_ID = R8CTZW8NMJ
     # - APP_STORE_CONNECT_ISSUER_ID = 24e51026-b46d-49ab-89ba-d7791751dfd5
     # - APP_STORE_CONNECT_API_KEY = (content of AuthKey_2SXY3XRQDL.p8 file)
         
@@ -55,7 +55,7 @@ workflows:
           echo "=========================================="
           echo "Integration: prodoc_api_key_admin"
           echo "Team ID: JT4YJSSV45"
-          echo "Bundle ID: com.nextpital.prodoc"
+          echo "Bundle ID: com.nextpital.prodocv6"
           echo ""
           
           # Initialize keychain
@@ -65,12 +65,12 @@ workflows:
           # Try to fetch signing files using Codemagic's automatic integration
           # The integration should provide environment variables automatically
           echo "Fetching signing files from App Store Connect..."
-          app-store-connect fetch-signing-files com.nextpital.prodoc \
+          app-store-connect fetch-signing-files com.nextpital.prodocv6 \
             --type IOS_APP_STORE \
             --create \
             --platform IOS 2>&1 | tee /tmp/fetch_signing.log || {
             echo "⚠ First attempt failed, trying without --create flag..."
-            app-store-connect fetch-signing-files com.nextpital.prodoc \
+            app-store-connect fetch-signing-files com.nextpital.prodocv6 \
               --type IOS_APP_STORE \
               --platform IOS 2>&1 | tee -a /tmp/fetch_signing.log || {
               echo "⚠ Fetch failed, checking log:"
@@ -428,8 +428,8 @@ workflows:
               ls -1 ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision 2>/dev/null | head -3 | while read profile; do
                 echo "  - $(basename "$profile")"
                 # Check if it's for our bundle ID
-                if security cms -D -i "$profile" 2>/dev/null | grep -q "com.nextpital.prodoc"; then
-                  echo "    ✓ Matches bundle ID com.nextpital.prodoc"
+                if security cms -D -i "$profile" 2>/dev/null | grep -q "com.nextpital.prodocv6"; then
+                  echo "    ✓ Matches bundle ID com.nextpital.prodocv6"
                 fi
               done
             fi
