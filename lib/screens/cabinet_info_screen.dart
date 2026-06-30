@@ -1679,7 +1679,7 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
   Widget _buildSectionCard({
     required BuildContext context,
     required bool isDark,
-    required FaIconData icon,
+    required IconData icon,
     required String title,
     required List<Widget> children,
   }) {
@@ -1769,7 +1769,7 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
   Widget _buildSocialMediaField({
     required TextEditingController controller,
     required String label,
-    required IconData icon,
+    required FaIconData icon,
     required Color color,
   }) {
     return TextFormField(
