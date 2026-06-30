@@ -1,0 +1,16 @@
+# This file contains sensitive information. DO NOT commit it to version control!
+# Copy this file to key.properties and fill in your actual values.
+
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+storeFile=../YOUR_KEYSTORE_FILE.jks
+
+# Instructions:
+# 1. Generate a keystore file using:
+#    keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+# 
+# 2. Copy this template to key.properties
+# 3. Replace the values above with your actual keystore information
+# 4. Update storeFile path to point to your keystore file location
+

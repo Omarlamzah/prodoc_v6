@@ -1,0 +1,70 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_copy/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks for Visual Studio Code
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio folders
+.android/
+.google_apis/
+
+# Local properties (Android)
+local.properties
+
+# Build artifacts
+**/android/app/debug/
+**/android/app/release/
+**/android/app/profile/
+**/linux/flutter/ephemeral/
+**/macos/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# iOS/macOS specific
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/App.framework
+/ios/Flutter/App.podspec
+/ios/Flutter/App.podspec.json
+/ios/Pods/
+/Pods/
+/ios/.bundle/
+*.xcworkspace
+
+# Environment files
+.env*
+
+# Signing credentials and provisioning profiles
+*.p8
+*.p12
+*.mobileprovision

@@ -1,0 +1,161 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nextpital.prodoc">
+    
+    <!-- Essential network permission for medical data synchronization -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <!-- 
+    MEDICAL PRACTICE MANAGEMENT APPLICATION
+    
+    ProDoc is a healthcare management system designed exclusively for licensed medical 
+    professionals (doctors, dentists, healthcare practitioners) to manage patient records, 
+    appointments, and clinical documentation in compliance with medical standards.
+    
+    ALL PERMISSIONS ARE ESSENTIAL FOR CORE MEDICAL FUNCTIONALITY:
+    
+    CAMERA PERMISSION - Medical Documentation:
+    ✓ Capture clinical photos of patient conditions, wounds, treatments
+    ✓ Document medical procedures and clinical findings for patient records
+    ✓ Create visual medical documentation required by healthcare standards
+    ✓ Attach clinical images to electronic medical records (EMR)
+    
+    STORAGE PERMISSIONS - Medical File Management:
+    ✓ Access medical documents, lab results, and patient files (legacy Android <13)
+    ✓ Import existing medical records and clinical documentation via Photo Picker (Android 13+)
+    ✓ Export medical reports for patient referrals and continuity of care
+    ✓ Manage medical attachments essential for patient treatment
+    
+    COMPLIANCE: HIPAA, GDPR, Medical Privacy Standards
+    -->
+    
+    <!-- Camera permission: Required for medical image capture and clinical documentation -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <!-- Microphone permission: Required for speech-to-text functionality in medical records -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    
+    <!-- Storage permissions: Required for medical document management and patient file access -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+                     android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+                     android:maxSdkVersion="29"
+                     tools:replace="android:maxSdkVersion"/>
+    
+    <!-- Notification permissions: Required for chat message notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <!-- 
+    CRITICAL: Explicitly remove READ_MEDIA_* permissions added by dependencies.
+    We use camera for medical photos and file_picker for document selection.
+    file_picker uses the system photo picker (Android 13+) which doesn't need these permissions.
+    -->
+    
+    <!-- Remove image/video permissions added by dependencies -->
+    <uses-permission 
+        android:name="android.permission.READ_MEDIA_IMAGES" 
+        tools:node="remove" />
+        
+    <uses-permission 
+        android:name="android.permission.READ_MEDIA_VIDEO" 
+        tools:node="remove" />
+        
+    <uses-permission 
+        android:name="android.permission.READ_MEDIA_AUDIO" 
+        tools:node="remove" />
+
+    <!-- Also ensure READ_MEDIA_VISUAL_USER_SELECTED is removed if present -->
+    <uses-permission 
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" 
+        tools:node="remove" />
+    
+    <!-- Camera hardware declaration (optional - supports devices without camera) -->
+    <uses-feature android:name="android.hardware.camera" 
+                  android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" 
+                  android:required="false"/>
+    
+    <application
+        android:label="ProDoc - Medical Practice Management"
+        android:name="${applicationName}"
+        android:icon="@mipmap/launcher_icon"
+        tools:replace="android:label">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        
+        <!-- Google Sign-In Configuration -->
+        <!-- Replace with your OAuth 2.0 Web client ID from Google Cloud Console -->
+        <!-- This is required for Google Sign-In to work properly -->
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.REVOKE_ACCESS_ENABLED"
+            android:value="true" />
+        
+        <!-- Firebase Cloud Messaging -->
+        <!-- This service handles FCM messages in the background -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.messaging.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        
+        <!-- Default notification channel for FCM -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="chat_messages" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- Allow resolving http/https VIEW intents (pdf/web links) -->
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <!-- Speech recognition service query (required for speech_to_text package) -->
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+</manifest>

@@ -1,0 +1,2292 @@
+{
+  "@@locale": "en",
+  "appTitle": "NextPital Mobile App",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Dashboard screen title"
+  },
+  "patients": "Patients",
+  "@patients": {
+    "description": "Patients screen title"
+  },
+  "appointments": "Appointments",
+  "@appointments": {
+    "description": "Appointments screen title"
+  },
+  "medicalRecords": "Medical Records",
+  "@medicalRecords": {
+    "description": "Medical records screen title"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language option"
+  },
+  "french": "French",
+  "@french": {
+    "description": "French language option"
+  },
+  "arabic": "Arabic",
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button text"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Add button text"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading indicator text"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error message title"
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success message title"
+  },
+  "noData": "No data available",
+  "@noData": {
+    "description": "Message when no data is available"
+  },
+  "main": "Main",
+  "@main": {
+    "description": "Main section header"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Overview subtitle"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Quick actions section header"
+  },
+  "createAppointment": "Create Appointment",
+  "@createAppointment": {
+    "description": "Create appointment button"
+  },
+  "newAppointment": "New appointment",
+  "@newAppointment": {
+    "description": "New appointment subtitle"
+  },
+  "createPrescription": "Create Prescription",
+  "@createPrescription": {
+    "description": "Create prescription button"
+  },
+  "newPrescription": "New prescription",
+  "@newPrescription": {
+    "description": "New prescription subtitle"
+  },
+  "newInvoice": "New Invoice",
+  "@newInvoice": {
+    "description": "New invoice button"
+  },
+  "createInvoice": "Create invoice",
+  "@createInvoice": {
+    "description": "Create invoice subtitle"
+  },
+  "createMedicalRecord": "Create Medical Record",
+  "@createMedicalRecord": {
+    "description": "Create medical record button"
+  },
+  "newRecord": "New record",
+  "@newRecord": {
+    "description": "New record subtitle"
+  },
+  "calendarAndAppointments": "Calendar & Appointments",
+  "@calendarAndAppointments": {
+    "description": "Calendar section header"
+  },
+  "calendar": "Calendar",
+  "allServices": "All Services",
+  "@calendar": {
+    "description": "Calendar button"
+  },
+  "calendarView": "Calendar view",
+  "@calendarView": {
+    "description": "Calendar view subtitle"
+  },
+  "allAppointments": "All appointments",
+  "@allAppointments": {
+    "description": "All appointments subtitle"
+  },
+  "appointmentRequests": "Appointment Requests",
+  "@appointmentRequests": {
+    "description": "Appointment requests button"
+  },
+  "managePendingRequests": "Manage pending requests",
+  "@managePendingRequests": {
+    "description": "Manage pending requests subtitle"
+  },
+  "waitingRoom": "Waiting Room",
+  "@waitingRoom": {
+    "description": "Waiting room button"
+  },
+  "waitingRoomDisplay": "Waiting room display",
+  "@waitingRoomDisplay": {
+    "description": "Waiting room display subtitle"
+  },
+  "management": "Management",
+  "@management": {
+    "description": "Management section header"
+  },
+  "patientList": "Patient list",
+  "@patientList": {
+    "description": "Patient list subtitle"
+  },
+  "doctors": "Doctors",
+  "@doctors": {
+    "description": "Doctors button"
+  },
+  "manageDoctors": "Manage doctors",
+  "@manageDoctors": {
+    "description": "Manage doctors subtitle"
+  },
+  "medications": "Medications",
+  "@medications": {
+    "description": "Medications button"
+  },
+  "manageMedications": "Manage medications",
+  "@manageMedications": {
+    "description": "Manage medications subtitle"
+  },
+  "reports": "Reports",
+  "@reports": {
+    "description": "Reports button"
+  },
+  "viewReports": "View reports",
+  "@viewReports": {
+    "description": "View reports subtitle"
+  },
+  "invoices": "Invoices",
+  "@invoices": {
+    "description": "Invoices button"
+  },
+  "invoiceManagement": "Invoice management",
+  "@invoiceManagement": {
+    "description": "Invoice management subtitle"
+  },
+  "myPrescriptions": "My Prescriptions",
+  "@myPrescriptions": {
+    "description": "My prescriptions button"
+  },
+  "myPrescriptionsSubtitle": "My prescriptions",
+  "@myPrescriptionsSubtitle": {
+    "description": "My prescriptions subtitle"
+  },
+  "doctorTools": "Doctor Tools",
+  "@doctorTools": {
+    "description": "Doctor tools section header"
+  },
+  "patientHistory": "Patient History",
+  "@patientHistory": {
+    "description": "Patient history button"
+  },
+  "medicalHistory": "Medical history",
+  "@medicalHistory": {
+    "description": "Medical history subtitle"
+  },
+  "diagnosis": "Diagnosis",
+  "@diagnosis": {
+    "description": "Diagnosis button"
+  },
+  "diagnosticTools": "Diagnostic tools",
+  "@diagnosticTools": {
+    "description": "Diagnostic tools subtitle"
+  },
+  "labResults": "Lab Results",
+  "@labResults": {
+    "description": "Lab results button"
+  },
+  "analysesAndTests": "Analyses and tests",
+  "@analysesAndTests": {
+    "description": "Analyses and tests subtitle"
+  },
+  "medicalReports": "Medical Reports",
+  "@medicalReports": {
+    "description": "Medical reports button"
+  },
+  "reportsAndStatistics": "Reports and statistics",
+  "@reportsAndStatistics": {
+    "description": "Reports and statistics subtitle"
+  },
+  "clinicalNotes": "Clinical Notes",
+  "@clinicalNotes": {
+    "description": "Clinical notes button"
+  },
+  "notesAndObservations": "Notes and observations",
+  "@notesAndObservations": {
+    "description": "Notes and observations subtitle"
+  },
+  "vaccinations": "Vaccinations",
+  "@vaccinations": {
+    "description": "Vaccinations button"
+  },
+  "vaccinationManagement": "Vaccination management",
+  "@vaccinationManagement": {
+    "description": "Vaccination management subtitle"
+  },
+  "emergencies": "Emergencies",
+  "@emergencies": {
+    "description": "Emergencies button"
+  },
+  "emergencyCases": "Emergency cases",
+  "@emergencyCases": {
+    "description": "Emergency cases subtitle"
+  },
+  "consultations": "Consultations",
+  "@consultations": {
+    "description": "Consultations button"
+  },
+  "myConsultations": "My consultations",
+  "@myConsultations": {
+    "description": "My consultations subtitle"
+  },
+  "helpAndSupport": "Help & Support",
+  "@helpAndSupport": {
+    "description": "Help and support button"
+  },
+  "needHelp": "Need help?",
+  "@needHelp": {
+    "description": "Need help subtitle"
+  },
+  "rateApp": "Rate the app",
+  "@rateApp": {
+    "description": "Rate app button"
+  },
+  "rateOnPlayStore": "Rate on Play Store",
+  "@rateOnPlayStore": {
+    "description": "Rate on Play Store subtitle"
+  },
+  "organization": "Organization",
+  "@organization": {
+    "description": "Organization label"
+  },
+  "change": "Change",
+  "@change": {
+    "description": "Change button"
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
+  "rememberMe": "Remember me",
+  "@rememberMe": {
+    "description": "Remember me checkbox"
+  },
+  "dontHaveAccount": "Don't have an account?",
+  "@dontHaveAccount": {
+    "description": "Don't have account text"
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Register button"
+  },
+  "pleaseEnterEmail": "Please enter your email address",
+  "@pleaseEnterEmail": {
+    "description": "Please enter email message"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today time range"
+  },
+  "thisWeek": "This Week",
+  "@thisWeek": {
+    "description": "This week time range"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This month time range"
+  },
+  "thisYear": "This Year",
+  "@thisYear": {
+    "description": "This year time range"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All time range"
+  },
+  "configuration": "Configuration",
+  "@configuration": {
+    "description": "Configuration subtitle"
+  },
+  "services": "Services",
+  "@services": {
+    "description": "Services button"
+  },
+  "manageServices": "Manage services",
+  "@manageServices": {
+    "description": "Manage services subtitle"
+  },
+  "allRecords": "All records",
+  "@allRecords": {
+    "description": "All records subtitle"
+  },
+  "hospitalReports": "Hospital reports",
+  "@hospitalReports": {
+    "description": "Hospital reports subtitle"
+  },
+  "medicalPracticeManagement": "Medical Practice Management",
+  "@medicalPracticeManagement": {
+    "description": "Medical practice management subtitle"
+  },
+  "signInToContinue": "Sign in to continue",
+  "@signInToContinue": {
+    "description": "Sign in to continue message"
+  },
+  "emailAddress": "Email address",
+  "@emailAddress": {
+    "description": "Email address label"
+  },
+  "pleaseEnterEmail": "Please enter your email",
+  "@pleaseEnterEmail": {
+    "description": "Please enter email validation message"
+  },
+  "pleaseEnterValidEmail": "Please enter a valid email",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email validation message"
+  },
+  "pleaseEnterPassword": "Please enter your password",
+  "@pleaseEnterPassword": {
+    "description": "Please enter password validation message"
+  },
+  "passwordMustBeAtLeast": "Password must be at least 6 characters",
+  "@passwordMustBeAtLeast": {
+    "description": "Password length validation message"
+  },
+  "resetPassword": "Reset Password",
+  "@resetPassword": {
+    "description": "Reset password button"
+  },
+  "backToLogin": "Back to Login",
+  "@backToLogin": {
+    "description": "Back to login button"
+  },
+  "sendResetLink": "Send Reset Link",
+  "@sendResetLink": {
+    "description": "Send reset link button"
+  },
+  "day": "Day",
+  "@day": {
+    "description": "Day time range"
+  },
+  "week": "Week",
+  "@week": {
+    "description": "Week time range"
+  },
+  "month": "Month",
+  "@month": {
+    "description": "Month time range"
+  },
+  "totalPatients": "Total Patients",
+  "@totalPatients": {
+    "description": "Total patients stat card"
+  },
+  "totalAppointments": "Total Appointments",
+  "@totalAppointments": {
+    "description": "Total appointments stat card"
+  },
+  "pendingInvoices": "Pending Invoices",
+  "@pendingInvoices": {
+    "description": "Pending invoices stat card"
+  },
+  "requiresAction": "Requires action",
+  "@requiresAction": {
+    "description": "Requires action subtitle"
+  },
+  "urgentCases": "Urgent Cases",
+  "@urgentCases": {
+    "description": "Urgent cases stat card"
+  },
+  "highPriorityCases": "High priority cases",
+  "@highPriorityCases": {
+    "description": "High priority cases subtitle"
+  },
+  "totalPrescriptions": "Total Prescriptions",
+  "@totalPrescriptions": {
+    "description": "Total prescriptions stat card"
+  },
+  "active": "Active",
+  "@active": {
+    "description": "Active status"
+  },
+  "expired": "Expired",
+  "@expired": {
+    "description": "Expired status"
+  },
+  "patientsWaiting": "Patients waiting",
+  "@patientsWaiting": {
+    "description": "Patients waiting subtitle"
+  },
+  "analysisOverview": "Analysis Overview",
+  "@analysisOverview": {
+    "description": "Analysis overview section title"
+  },
+  "appointmentStatus": "Appointment Status",
+  "@appointmentStatus": {
+    "description": "Appointment status chart title"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Quick actions FAB label"
+  },
+  "user": "User",
+  "@user": {
+    "description": "User default name"
+  },
+  "hello": "Hello",
+  "@hello": {
+    "description": "Hello greeting"
+  },
+  "reviewDialogTitle": "Hello! 👋",
+  "@reviewDialogTitle": {
+    "description": "Review dialog title"
+  },
+  "reviewDialogMessage": "You've been using ProDoc for a while now. Would you be ready to leave us a review on the Play Store? It would help us a lot!",
+  "@reviewDialogMessage": {
+    "description": "Review dialog message"
+  },
+  "rateNow": "Rate now ⭐",
+  "@rateNow": {
+    "description": "Rate now button"
+  },
+  "maybeLater": "Maybe later",
+  "@maybeLater": {
+    "description": "Maybe later button"
+  },
+  "cannotOpenPlayStore": "Unable to open Play Store. Please try again later.",
+  "@cannotOpenPlayStore": {
+    "description": "Cannot open Play Store error message"
+  },
+  "monthlyAppointments": "Monthly Appointments",
+  "@monthlyAppointments": {
+    "description": "Monthly appointments chart title"
+  },
+  "prescriptions": "Prescriptions",
+  "@prescriptions": {
+    "description": "Prescriptions chart title"
+  },
+  "patientDetails": "Patient Details",
+  "@patientDetails": {
+    "description": "Patient details screen title"
+  },
+  "information": "Information",
+  "@information": {
+    "description": "Information tab label"
+  },
+  "records": "Records",
+  "@records": {
+    "description": "Records tab label"
+  },
+  "labTests": "Lab Tests",
+  "@labTests": {
+    "description": "Lab tests tab label"
+  },
+  "certificates": "Certificates",
+  "@certificates": {
+    "description": "Certificates tab label"
+  },
+  "searchType": "Search Type",
+  "@searchType": {
+    "description": "Search type dropdown label"
+  },
+  "filtersAndSort": "Filters and Sort",
+  "@filtersAndSort": {
+    "description": "Filters and sort section title"
+  },
+  "sortBy": "Sort By",
+  "@sortBy": {
+    "description": "Sort by dropdown label"
+  },
+  "order": "Order",
+  "@order": {
+    "description": "Order dropdown label"
+  },
+  "ascending": "Ascending",
+  "@ascending": {
+    "description": "Ascending sort order"
+  },
+  "descending": "Descending",
+  "@descending": {
+    "description": "Descending sort order"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Name field label"
+  },
+  "gender": "Gender",
+  "@gender": {
+    "description": "Gender field label"
+  },
+  "birthDate": "Birth Date",
+  "@birthDate": {
+    "description": "Birth date field label"
+  },
+  "bloodType": "Blood Type",
+  "@bloodType": {
+    "description": "Blood type field label"
+  },
+  "insurance": "Insurance",
+  "@insurance": {
+    "description": "Insurance field label"
+  },
+  "listView": "List view",
+  "@listView": {
+    "description": "List view tooltip"
+  },
+  "gridView": "Grid view",
+  "@gridView": {
+    "description": "Grid view tooltip"
+  },
+  "noPatientFound": "No Patient Found",
+  "@noPatientFound": {
+    "description": "No patient found message"
+  },
+  "noPatientsAvailable": "No Patients Available",
+  "@noPatientsAvailable": {
+    "description": "No patients available message"
+  },
+  "tryAnotherSearch": "Try another search or modify the filters",
+  "@tryAnotherSearch": {
+    "description": "Try another search message"
+  },
+  "startByAddingPatients": "Start by adding patients",
+  "@startByAddingPatients": {
+    "description": "Start by adding patients message"
+  },
+  "searchByPatient": "Search by patient, diagnosis, symptoms...",
+  "@searchByPatient": {
+    "description": "Search medical records placeholder"
+  },
+  "searchFilters": "Search Filters",
+  "@searchFilters": {
+    "description": "Search filters section title"
+  },
+  "searchPatient": "Search Patient",
+  "@searchPatient": {
+    "description": "Search patient field label"
+  },
+  "nameEmailOrPhone": "Name, email or phone...",
+  "@nameEmailOrPhone": {
+    "description": "Search patient placeholder"
+  },
+  "cniNumber": "CNI Number",
+  "@cniNumber": {
+    "description": "CNI number field label"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Date field label"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button text"
+  },
+  "noMedicalRecordsFound": "No Medical Records Found",
+  "@noMedicalRecordsFound": {
+    "description": "No medical records found message"
+  },
+  "tryModifyingSearch": "Try modifying your search criteria",
+  "@tryModifyingSearch": {
+    "description": "Try modifying search message"
+  },
+  "recordNumber": "Record #{number}",
+  "@recordNumber": {
+    "description": "Record number label",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "doctor": "Doctor",
+  "@doctor": {
+    "description": "Doctor field label"
+  },
+  "specialty": "Specialty",
+  "@specialty": {
+    "description": "Specialty field label"
+  },
+  "diagnosis": "Diagnosis",
+  "@diagnosis": {
+    "description": "Diagnosis field label"
+  },
+  "unknownPatient": "Unknown Patient",
+  "@unknownPatient": {
+    "description": "Unknown patient label"
+  },
+  "unknownDoctor": "Unknown Doctor",
+  "@unknownDoctor": {
+    "description": "Unknown doctor label"
+  },
+  "insuranceNA": "Insurance N/A",
+  "@insuranceNA": {
+    "description": "Insurance not available label"
+  },
+  "unknownGroup": "Unknown Group",
+  "@unknownGroup": {
+    "description": "Unknown blood group label"
+  },
+  "showsOnlyPatientsWithAppointments": "Shows only patients with appointments in the selected period.",
+  "@showsOnlyPatientsWithAppointments": {
+    "description": "Filter info message"
+  },
+  "monthlyPrescriptions": "Monthly Prescriptions",
+  "@monthlyPrescriptions": {
+    "description": "Monthly prescriptions chart title"
+  },
+  "or": "OR",
+  "@or": {
+    "description": "OR divider text"
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Continue with Google button text"
+  },
+  "poweredBy": "Powered by",
+  "@poweredBy": {
+    "description": "Powered by text"
+  },
+  "proDoc": "ProDoc",
+  "@proDoc": {
+    "description": "ProDoc app name"
+  },
+  "bookAppointment": "Book Appointment",
+  "@bookAppointment": {
+    "description": "Book appointment screen title"
+  },
+  "onlineBooking": "Online Booking",
+  "@onlineBooking": {
+    "description": "Online booking title"
+  },
+  "onlineBookingHeader": "Online Booking",
+  "@onlineBookingHeader": {
+    "description": "Header for online booking screen"
+  },
+  "onlineBookingSubheader": "Schedule your consultation in just a few clicks",
+  "@onlineBookingSubheader": {
+    "description": "Subheader for online booking screen"
+  },
+  "bookForMe": "Book for me",
+  "@bookForMe": {
+    "description": "Option to book appointment for oneself"
+  },
+  "someoneElse": "Someone else",
+  "@someoneElse": {
+    "description": "Option to book appointment for someone else"
+  },
+  "appointmentConfirmedTitle": "Appointment Confirmed!",
+  "@appointmentConfirmedTitle": {
+    "description": "Title for appointment confirmation screen"
+  },
+  "appointmentRequestSentDetails": "Your appointment request has been sent successfully! We will confirm your appointment as soon as possible.",
+  "@appointmentRequestSentDetails": {
+    "description": "Detailed message on appointment confirmation screen"
+  },
+  "appointmentRequestSentSuccess": "Your appointment request has been sent successfully!",
+  "@appointmentRequestSentSuccess": {
+    "description": "Success message for appointment request"
+  },
+  "desiredService": "Desired Service",
+  "@desiredService": {
+    "description": "Service selection label"
+  },
+  "doctorOrResponsible": "Doctor / Responsible",
+  "@doctorOrResponsible": {
+    "description": "Doctor selection label"
+  },
+  "appointmentDate": "Appointment Date",
+  "@appointmentDate": {
+    "description": "Date selection label"
+  },
+  "additionalNotesOptional": "Additional Notes (Optional)",
+  "@additionalNotesOptional": {
+    "description": "Additional notes label"
+  },
+  "confirmAppointment": "Confirm Appointment",
+  "@confirmAppointment": {
+    "description": "Confirm appointment button label"
+  },
+  "fullNameLabel": "Full Name",
+  "@fullNameLabel": {
+    "description": "Full name input label"
+  },
+  "emailAddressLabel": "Email Address",
+  "@emailAddressLabel": {
+    "description": "Email address input label"
+  },
+  "phoneNumberLabel": "Phone Number",
+  "@phoneNumberLabel": {
+    "description": "Phone number input label"
+  },
+  "emailAddressOptional": "Email Address (Optional)",
+  "@emailAddressOptional": {
+    "description": "Label for optional email address field"
+  },
+  "personalInformation": "Personal Information",
+  "@personalInformation": {
+    "description": "Personal information section title"
+  },
+  "pleaseSelectService": "Please select a service",
+  "@pleaseSelectService": {
+    "description": "Validation message for service selection"
+  },
+  "pleaseSelectDoctor": "Please select a doctor",
+  "@pleaseSelectDoctor": {
+    "description": "Validation message for doctor selection"
+  },
+  "pleaseSelectDate": "Please select a date",
+  "@pleaseSelectDate": {
+    "description": "Validation message for date selection"
+  },
+  "pleaseSelectTimeSlot": "Please select a time slot",
+  "@pleaseSelectTimeSlot": {
+    "description": "Validation message for time slot selection"
+  },
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Validation message for name field"
+  },
+  "emailRequired": "Email address is required",
+  "@emailRequired": {
+    "description": "Validation message for email field"
+  },
+  "invalidEmail": "Invalid email address",
+  "@invalidEmail": {
+    "description": "Validation message for invalid email"
+  },
+  "phoneRequired": "Phone number is required",
+  "@phoneRequired": {
+    "description": "Validation message for phone number field"
+  },
+  "loadingTimeSlots": "Loading time slots...",
+  "@loadingTimeSlots": {
+    "description": "Loading message for time slots"
+  },
+  "describeSymptoms": "Describe your symptoms or reasons for consultation...",
+  "@describeSymptoms": {
+    "description": "Hint text for notes field"
+  },
+  "noTimeSlotsAvailable": "No time slots available",
+  "@noTimeSlotsAvailable": {
+    "description": "Message when no time slots are found"
+  },
+  "pleaseSelectAnotherDate": "Please select another date",
+  "@pleaseSelectAnotherDate": {
+    "description": "Instruction for user to select a different date"
+  },
+  "selectDate": "Select a date",
+  "@selectDate": {
+    "description": "Placeholder for date field"
+  },
+  "addItem": "Add Item",
+  "@addItem": {
+    "description": "Add item button"
+  },
+  "addItemManually": "Add Item Manually",
+  "@addItemManually": {
+    "description": "Add item manually button"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button"
+  },
+  "confirmation": "Confirmation",
+  "@confirmation": {
+    "description": "Confirmation dialog title"
+  },
+  "public": "Public",
+  "@public": {
+    "description": "Public visibility option"
+  },
+  "private": "Private",
+  "@private": {
+    "description": "Private visibility option"
+  },
+  "publicDescription": "Public (visible to authorized staff)",
+  "@publicDescription": {
+    "description": "Public visibility description"
+  },
+  "privateDescription": "Private (only you)",
+  "@privateDescription": {
+    "description": "Private visibility description"
+  },
+  "chooseVisibility": "Choose visibility",
+  "@chooseVisibility": {
+    "description": "Choose visibility dialog title"
+  },
+  "visibility": "Visibility",
+  "@visibility": {
+    "description": "Visibility label"
+  },
+  "changeToPublic": "Change to Public",
+  "@changeToPublic": {
+    "description": "Button to change visibility to public"
+  },
+  "changeToPrivate": "Change to Private",
+  "@changeToPrivate": {
+    "description": "Button to change visibility to private"
+  },
+  "visibleToAllAuthorized": "Visible to all authorized users",
+  "@visibleToAllAuthorized": {
+    "description": "Description for public visibility"
+  },
+  "onlyVisibleToDoctorAndAdmin": "Only visible to assigned doctor and admin",
+  "@onlyVisibleToDoctorAndAdmin": {
+    "description": "Description for private visibility"
+  },
+  "visibilityUpdated": "Visibility updated to {visibility}",
+  "@visibilityUpdated": {
+    "description": "Success message when visibility is updated",
+    "placeholders": {
+      "visibility": {
+        "type": "String",
+        "example": "Public"
+      }
+    }
+  },
+  "createNewMedicalRecord": "Create New Medical Record",
+  "@createNewMedicalRecord": {
+    "description": "Create new medical record option"
+  },
+  "startWithEmptyForm": "Start with empty form",
+  "@startWithEmptyForm": {
+    "description": "Start with empty form subtitle"
+  },
+  "deleteAttachment": "Delete Attachment",
+  "@deleteAttachment": {
+    "description": "Delete attachment button"
+  },
+  "attachmentDeleted": "Attachment deleted",
+  "@attachmentDeleted": {
+    "description": "Attachment deleted success message"
+  },
+  "pdfUrlNotAvailable": "PDF URL not available",
+  "@pdfUrlNotAvailable": {
+    "description": "PDF URL not available error"
+  },
+  "pdfDownloaded": "PDF downloaded",
+  "@pdfDownloaded": {
+    "description": "PDF downloaded success message"
+  },
+  "unableToOpenPdf": "Unable to open PDF",
+  "@unableToOpenPdf": {
+    "description": "Unable to open PDF error"
+  },
+  "errorOpeningPdf": "Error opening PDF",
+  "@errorOpeningPdf": {
+    "description": "Error opening PDF message"
+  },
+  "unableToOpenFile": "Unable to open file",
+  "@unableToOpenFile": {
+    "description": "Unable to open file error"
+  },
+  "errorOpening": "Error opening",
+  "@errorOpening": {
+    "description": "Error opening message"
+  },
+  "unableToReadFile": "Unable to read file. Please try again.",
+  "@unableToReadFile": {
+    "description": "Unable to read file error"
+  },
+  "filePathNotAvailable": "File path not available. Please try again.",
+  "@filePathNotAvailable": {
+    "description": "File path not available error"
+  },
+  "fileDoesNotExist": "File does not exist",
+  "@fileDoesNotExist": {
+    "description": "File does not exist error"
+  },
+  "errorSelectingFile": "Error selecting file",
+  "@errorSelectingFile": {
+    "description": "Error selecting file message"
+  },
+  "confirmDelete": "Confirm Delete",
+  "@confirmDelete": {
+    "description": "Confirm delete dialog title"
+  },
+  "confirmDeletion": "Confirm Deletion",
+  "@confirmDeletion": {
+    "description": "Confirm deletion dialog title"
+  },
+  "unableToEditAppointment": "Unable to edit this appointment",
+  "@unableToEditAppointment": {
+    "description": "Unable to edit appointment error"
+  },
+  "unableToCall": "Unable to call",
+  "@unableToCall": {
+    "description": "Unable to call error"
+  },
+  "unableToOpenWhatsApp": "Unable to open WhatsApp",
+  "@unableToOpenWhatsApp": {
+    "description": "Unable to open WhatsApp error"
+  },
+  "unableToGenerateGoogleCalendarLink": "Unable to generate Google Calendar link",
+  "@unableToGenerateGoogleCalendarLink": {
+    "description": "Unable to generate Google Calendar link error"
+  },
+  "errorLoadingDoctors": "Error loading doctors",
+  "@errorLoadingDoctors": {
+    "description": "Error loading doctors message"
+  },
+  "errorSearchingPatients": "Error searching patients",
+  "@errorSearchingPatients": {
+    "description": "Error searching patients message"
+  },
+  "errorSearching": "Error searching",
+  "@errorSearching": {
+    "description": "Error searching message"
+  },
+  "errorLoadingAppointments": "Error loading appointments",
+  "@errorLoadingAppointments": {
+    "description": "Error loading appointments message"
+  },
+  "errorDownloading": "Error downloading",
+  "@errorDownloading": {
+    "description": "Error downloading message"
+  },
+  "pleaseSelectPatient": "Please select a patient",
+  "@pleaseSelectPatient": {
+    "description": "Please select a patient message"
+  },
+  "invoiceCreatedSuccessfully": "Invoice created successfully!",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Invoice created successfully message"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Pending status"
+  },
+  "scheduled": "Scheduled",
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed status"
+  },
+  "cancelled": "Cancelled",
+  "@cancelled": {
+    "description": "Cancelled status"
+  },
+  "noShow": "No Show",
+  "@noShow": {
+    "description": "No Show status"
+  },
+  "high": "High",
+  "@high": {
+    "description": "High priority"
+  },
+  "medium": "Medium",
+  "@medium": {
+    "description": "Medium priority"
+  },
+  "low": "Low",
+  "@low": {
+    "description": "Low priority"
+  },
+  "priority": "Priority",
+  "@priority": {
+    "description": "Priority label"
+  },
+  "period": "Period",
+  "@period": {
+    "description": "Period label"
+  },
+  "start": "Start",
+  "@start": {
+    "description": "Start date label"
+  },
+  "end": "End",
+  "@end": {
+    "description": "End date label"
+  },
+  "select": "Select",
+  "@select": {
+    "description": "Select button/label"
+  },
+  "previous": "Previous",
+  "@previous": {
+    "description": "Previous button"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next button"
+  },
+  "page": "Page",
+  "@page": {
+    "description": "Page label"
+  },
+  "selected": "selected",
+  "@selected": {
+    "description": "Selected items count"
+  },
+  "clear": "Clear",
+  "@clear": {
+    "description": "Clear button"
+  },
+  "markAsCompleted": "Mark as Completed",
+  "@markAsCompleted": {
+    "description": "Mark as completed button"
+  },
+  "reschedule": "Reschedule",
+  "@reschedule": {
+    "description": "Reschedule button"
+  },
+  "viewDetails": "View Details",
+  "@viewDetails": {
+    "description": "View details button"
+  },
+  "sendWhatsAppReminder": "Send WhatsApp Reminder",
+  "@sendWhatsAppReminder": {
+    "description": "Send WhatsApp reminder button"
+  },
+  "viewPrescriptions": "View Prescriptions",
+  "@viewPrescriptions": {
+    "description": "View prescriptions button"
+  },
+  "accessInvoice": "Access Invoice",
+  "@accessInvoice": {
+    "description": "Access invoice button"
+  },
+  "noAppointments": "No Appointments",
+  "@noAppointments": {
+    "description": "No appointments message"
+  },
+  "adjustYourFilters": "Adjust your filters or create a new one.",
+  "@adjustYourFilters": {
+    "description": "Adjust filters message"
+  },
+  "appointmentRequests": "Appointment Requests",
+  "@appointmentRequests": {
+    "description": "Appointment requests screen title"
+  },
+  "searchRequests": "Search requests...",
+  "@searchRequests": {
+    "description": "Search requests placeholder"
+  },
+  "noRequestsPending": "No appointment requests pending.",
+  "@noRequestsPending": {
+    "description": "No requests pending message"
+  },
+  "noRequestsMatch": "No appointment requests match your search criteria.",
+  "@noRequestsMatch": {
+    "description": "No requests match message"
+  },
+  "rejectRequest": "Reject Request",
+  "@rejectRequest": {
+    "description": "Reject request title"
+  },
+  "selectReason": "Select a reason",
+  "@selectReason": {
+    "description": "Select reason label"
+  },
+  "doctorUnavailable": "Doctor Unavailable",
+  "@doctorUnavailable": {
+    "description": "Doctor unavailable reason"
+  },
+  "timeSlotTaken": "Time Slot Taken",
+  "@timeSlotTaken": {
+    "description": "Time slot taken reason"
+  },
+  "incompleteInformation": "Incomplete Information",
+  "@incompleteInformation": {
+    "description": "Incomplete information reason"
+  },
+  "serviceUnavailable": "Service Unavailable",
+  "@serviceUnavailable": {
+    "description": "Service unavailable reason"
+  },
+  "other": "Other",
+  "@other": {
+    "description": "Other reason option"
+  },
+  "enterCustomReason": "Enter a custom reason",
+  "@enterCustomReason": {
+    "description": "Enter custom reason placeholder"
+  },
+  "submitRejection": "Submit Rejection",
+  "@submitRejection": {
+    "description": "Submit rejection button"
+  },
+  "updateAndConfirm": "Update and Confirm",
+  "@updateAndConfirm": {
+    "description": "Update and confirm button"
+  },
+  "updateAppointmentDateTime": "Update appointment date and time",
+  "@updateAppointmentDateTime": {
+    "description": "Update appointment date and time title"
+  },
+  "selectDateAndTime": "Please select a date and time.",
+  "@selectDateAndTime": {
+    "description": "Select date and time message"
+  },
+  "enterValidTime": "Please enter a valid time in HH:mm format (e.g. 19:59).",
+  "@enterValidTime": {
+    "description": "Enter valid time message"
+  },
+  "attachFiles": "Attach Files",
+  "@attachFiles": {
+    "description": "Attach files screen title"
+  },
+  "attachFilesToMedicalRecord": "Attach Files to Medical Record",
+  "@attachFilesToMedicalRecord": {
+    "description": "Attach files to medical record subtitle"
+  },
+  "addAttachment": "Add Attachment",
+  "@addAttachment": {
+    "description": "Add attachment title"
+  },
+  "chooseOption": "Choose an option to add a file",
+  "@chooseOption": {
+    "description": "Choose option message"
+  },
+  "camera": "Camera",
+  "@camera": {
+    "description": "Camera option"
+  },
+  "takePhoto": "Take a photo",
+  "@takePhoto": {
+    "description": "Take photo subtitle"
+  },
+  "gallery": "Gallery",
+  "@gallery": {
+    "description": "Gallery option"
+  },
+  "chooseImage": "Choose an image",
+  "@chooseImage": {
+    "description": "Choose image subtitle"
+  },
+  "file": "File",
+  "@file": {
+    "description": "File option"
+  },
+  "chooseFile": "Choose a file",
+  "@chooseFile": {
+    "description": "Choose file subtitle"
+  },
+  "selectedFiles": "Selected Files",
+  "@selectedFiles": {
+    "description": "Selected files label"
+  },
+  "uploadFiles": "Upload Files",
+  "@uploadFiles": {
+    "description": "Upload files button"
+  },
+  "uploading": "Uploading...",
+  "@uploading": {
+    "description": "Uploading message"
+  },
+  "noFilesSelected": "No files selected",
+  "@noFilesSelected": {
+    "description": "No files selected message"
+  },
+  "addFiles": "Add Files",
+  "@addFiles": {
+    "description": "Add files button"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button"
+  },
+  "upload": "Upload",
+  "@upload": {
+    "description": "Upload button"
+  },
+  "selectPatient": "Select Patient",
+  "@selectPatient": {
+    "description": "Select patient label"
+  },
+  "selectRecord": "Select Record",
+  "@selectRecord": {
+    "description": "Select record label"
+  },
+  "recordId": "Record ID",
+  "@recordId": {
+    "description": "Record ID label"
+  },
+  "diagnosis": "Diagnosis",
+  "@diagnosis": {
+    "description": "Diagnosis label"
+  },
+  "filesAttachedSuccessfully": "Files attached successfully",
+  "@filesAttachedSuccessfully": {
+    "description": "Files attached successfully title"
+  },
+  "filesUploadedSuccessfully": "file(s) uploaded successfully",
+  "@filesUploadedSuccessfully": {
+    "description": "Files uploaded successfully message"
+  },
+  "filesFailed": "file(s) failed",
+  "@filesFailed": {
+    "description": "Files failed message"
+  },
+  "viewRecord": "View Record",
+  "@viewRecord": {
+    "description": "View record button"
+  },
+  "viewProfile": "View Profile",
+  "@viewProfile": {
+    "description": "View profile button"
+  },
+  "fileUploadFailed": "File upload failed",
+  "@fileUploadFailed": {
+    "description": "File upload failed message"
+  },
+  "noPatientsFound": "No patients found",
+  "@noPatientsFound": {
+    "description": "No patients found message"
+  },
+  "noMedicalRecordsFound": "No medical records found",
+  "@noMedicalRecordsFound": {
+    "description": "No medical records found message"
+  },
+  "cannotReadFile": "Cannot read file. Please try again.",
+  "@cannotReadFile": {
+    "description": "Cannot read file error"
+  },
+  "filePathNotAvailable": "File path not available. Please try again.",
+  "@filePathNotAvailable": {
+    "description": "File path not available error"
+  },
+  "errorSelectingFiles": "Error selecting files",
+  "@errorSelectingFiles": {
+    "description": "Error selecting files message"
+  },
+  "searchForPatient": "Search for a patient...",
+  "@searchForPatient": {
+    "description": "Search for patient placeholder"
+  },
+  "selectMedicalRecord": "Select Medical Record",
+  "@selectMedicalRecord": {
+    "description": "Select medical record label"
+  },
+  "pleaseSelectRecordAndFiles": "Please select a record and files",
+  "@pleaseSelectRecordAndFiles": {
+    "description": "Please select record and files message"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  "appointmentUpdatedSuccessfully": "Appointment updated successfully",
+  "@appointmentUpdatedSuccessfully": {
+    "description": "Appointment updated successfully message"
+  },
+  "statusChangedTo": "Status changed to",
+  "@statusChangedTo": {
+    "description": "Status changed to message"
+  },
+  "doYouWantToChangeStatus": "Do you really want to change the status to",
+  "@doYouWantToChangeStatus": {
+    "description": "Do you want to change status message"
+  },
+  "doYouWantToChangeStatusOf": "Do you really want to change the status of",
+  "@doYouWantToChangeStatusOf": {
+    "description": "Do you want to change status of multiple message"
+  },
+  "appointmentsTo": "appointments to",
+  "@appointmentsTo": {
+    "description": "Appointments to message"
+  },
+  "appointmentsUpdated": "appointments updated",
+  "@appointmentsUpdated": {
+    "description": "Appointments updated message"
+  },
+  "appointmentsUpdatedFailed": "appointments updated, failed",
+  "@appointmentsUpdatedFailed": {
+    "description": "Appointments updated failed message"
+  },
+  "statusOfAppointmentsChanged": "Status of appointments changed to",
+  "@statusOfAppointmentsChanged": {
+    "description": "Status of appointments changed message"
+  },
+  "reminderSentTo": "Reminder sent to",
+  "@reminderSentTo": {
+    "description": "Reminder sent to message"
+  },
+  "forAppointment": "for appointment",
+  "@forAppointment": {
+    "description": "For appointment message"
+  },
+  "appointmentDetails": "Appointment Details",
+  "@appointmentDetails": {
+    "description": "Appointment details title"
+  },
+  "appointment": "Appointment",
+  "@appointment": {
+    "description": "Appointment label"
+  },
+  "phone": "Phone",
+  "@phone": {
+    "description": "Phone label"
+  },
+  "doctorEmail": "Doctor Email",
+  "@doctorEmail": {
+    "description": "Doctor email label"
+  },
+  "time": "Time",
+  "@time": {
+    "description": "Time label"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "Status label"
+  },
+  "createdAt": "Created At",
+  "@createdAt": {
+    "description": "Created at label"
+  },
+  "updatedAt": "Updated At",
+  "@updatedAt": {
+    "description": "Updated at label"
+  },
+  "notes": "Notes",
+  "@notes": {
+    "description": "Notes label"
+  },
+  "sending": "Sending...",
+  "@sending": {
+    "description": "Sending message"
+  },
+  "sendingWhatsAppReminder": "Sending WhatsApp reminder...",
+  "@sendingWhatsAppReminder": {
+    "description": "Sending WhatsApp reminder message"
+  },
+  "whatsAppReminderSentSuccessfully": "WhatsApp reminder sent successfully!",
+  "@whatsAppReminderSentSuccessfully": {
+    "description": "WhatsApp reminder sent successfully message"
+  },
+  "failedToSendWhatsAppReminder": "Failed to send WhatsApp reminder. Please try again.",
+  "@failedToSendWhatsAppReminder": {
+    "description": "Failed to send WhatsApp reminder message"
+  },
+  "dailyMessageLimitReached": "Daily message limit reached. Please try again tomorrow.",
+  "@dailyMessageLimitReached": {
+    "description": "Daily message limit reached message"
+  },
+  "editAppointment": "Edit Appointment",
+  "@editAppointment": {
+    "description": "Edit appointment title"
+  },
+  "cannotEditAppointment": "Cannot edit this appointment",
+  "@cannotEditAppointment": {
+    "description": "Cannot edit appointment message"
+  },
+  "pleaseSelectTime": "Please select a time",
+  "@pleaseSelectTime": {
+    "description": "Please select time message"
+  },
+  "noTimeSlotsAvailable": "No time slots available for this date",
+  "@noTimeSlotsAvailable": {
+    "description": "No time slots available message"
+  },
+  "noTimeSlotsAvailableShort": "No time slots available",
+  "@noTimeSlotsAvailableShort": {
+    "description": "No time slots available short message"
+  },
+  "unknown": "Unknown",
+  "@unknown": {
+    "description": "Unknown label"
+  },
+  "unknownService": "Unknown service",
+  "@unknownService": {
+    "description": "Unknown service label"
+  },
+  "unknownDate": "Unknown date",
+  "@unknownDate": {
+    "description": "Unknown date label"
+  },
+  "invalidDate": "Invalid date",
+  "@invalidDate": {
+    "description": "Invalid date message"
+  },
+  "quickStatistics": "Quick Statistics",
+  "@quickStatistics": {
+    "description": "Quick statistics title"
+  },
+  "advancedFilters": "Advanced Filters",
+  "@advancedFilters": {
+    "description": "Advanced filters title"
+  },
+  "showAdvancedFilters": "Show advanced filters",
+  "@showAdvancedFilters": {
+    "description": "Show advanced filters tooltip"
+  },
+  "hideAdvancedFilters": "Hide advanced filters",
+  "@hideAdvancedFilters": {
+    "description": "Hide advanced filters tooltip"
+  },
+  "quickFilters": "Quick Filters",
+  "@quickFilters": {
+    "description": "Quick filters title"
+  },
+  "searchOrQuicklySelect": "Search or quickly select a status",
+  "@searchOrQuicklySelect": {
+    "description": "Search or quickly select message"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Export button"
+  },
+  "exportAvailableSoon": "Export available soon.",
+  "@exportAvailableSoon": {
+    "description": "Export available soon message"
+  },
+  "listRefreshed": "List refreshed",
+  "@listRefreshed": {
+    "description": "List refreshed message"
+  },
+  "statistics": "Statistics",
+  "@statistics": {
+    "description": "Statistics title"
+  },
+  "viewStatistics": "View statistics",
+  "@viewStatistics": {
+    "description": "View statistics subtitle"
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button"
+  },
+  "refreshList": "Refresh list",
+  "@refreshList": {
+    "description": "Refresh list subtitle"
+  },
+  "endOfResults": "End of results.",
+  "@endOfResults": {
+    "description": "End of results message"
+  },
+  "viewPrescriptionsAvailableSoon": "View prescriptions available soon.",
+  "@viewPrescriptionsAvailableSoon": {
+    "description": "View prescriptions available soon message"
+  },
+  "invoiceAccessAvailableSoon": "Invoice access available soon.",
+  "@invoiceAccessAvailableSoon": {
+    "description": "Invoice access available soon message"
+  },
+  "billingComingSoon": "Billing coming soon.",
+  "@billingComingSoon": {
+    "description": "Billing coming soon message"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details button"
+  },
+  "invoice": "Invoice",
+  "@invoice": {
+    "description": "Invoice button"
+  },
+  "whatsApp": "WhatsApp",
+  "@whatsApp": {
+    "description": "WhatsApp button"
+  },
+  "appointmentNumber": "Appointment",
+  "@appointmentNumber": {
+    "description": "Appointment number label"
+  },
+  "doctor": "Doctor",
+  "@doctor": {
+    "description": "Doctor label"
+  },
+  "patient": "Patient",
+  "@patient": {
+    "description": "Patient label"
+  },
+  "id": "ID",
+  "@id": {
+    "description": "ID label"
+  },
+  "actions": "Actions",
+  "@actions": {
+    "description": "Actions label"
+  },
+  "searchPatientDoctorService": "Search patient, doctor, service...",
+  "@searchPatientDoctorService": {
+    "description": "Search patient doctor service placeholder"
+  },
+  "listView": "List view",
+  "@listView": {
+    "description": "List view tooltip"
+  },
+  "gridView": "Grid view",
+  "@gridView": {
+    "description": "Grid view tooltip"
+  },
+  "successTitle": "Success",
+  "@successTitle": {
+    "description": "Success title"
+  },
+  "errorTitle": "Error",
+  "@errorTitle": {
+    "description": "Error title"
+  },
+  "warningTitle": "Warning",
+  "@warningTitle": {
+    "description": "Warning title"
+  },
+  "appointmentConfirmed": "Appointment confirmed! The patient can see it in their dashboard or calendar.",
+  "@appointmentConfirmed": {
+    "description": "Appointment confirmed message"
+  },
+  "pleaseSelectNewDateTime": "Please select a new date or time for this appointment.",
+  "@pleaseSelectNewDateTime": {
+    "description": "Please select new date time message"
+  },
+  "confirmationFailed": "Confirmation failed: Doctor not found.",
+  "@confirmationFailed": {
+    "description": "Confirmation failed doctor not found"
+  },
+  "confirmationFailedInvalidTime": "Confirmation failed: The request time is invalid. Please correct the time.",
+  "@confirmationFailedInvalidTime": {
+    "description": "Confirmation failed invalid time"
+  },
+  "confirmationFailedError": "Confirmation failed",
+  "@confirmationFailedError": {
+    "description": "Confirmation failed error"
+  },
+  "appointmentUpdatedConfirmed": "Appointment updated and confirmed successfully!",
+  "@appointmentUpdatedConfirmed": {
+    "description": "Appointment updated confirmed message"
+  },
+  "newTimeOutsideAvailability": "The new selected time is still outside availability hours. Please choose another time.",
+  "@newTimeOutsideAvailability": {
+    "description": "New time outside availability message"
+  },
+  "timeConflict": "Time conflict with the new selected time. Please choose another slot.",
+  "@timeConflict": {
+    "description": "Time conflict message"
+  },
+  "updateConfirmationFailed": "Update and confirmation failed",
+  "@updateConfirmationFailed": {
+    "description": "Update confirmation failed message"
+  },
+  "requestRejectedSuccessfully": "Appointment request rejected successfully",
+  "@requestRejectedSuccessfully": {
+    "description": "Request rejected successfully message"
+  },
+  "rejectionFailed": "Rejection failed",
+  "@rejectionFailed": {
+    "description": "Rejection failed message"
+  },
+  "pleaseSelectRejectionReason": "Please select a rejection reason",
+  "@pleaseSelectRejectionReason": {
+    "description": "Please select rejection reason message"
+  },
+  "updateAppointmentDateTimeDesc": "The selected time or date is not available or invalid. Please choose a new date and time in HH:mm format (e.g. 19:59).",
+  "@updateAppointmentDateTimeDesc": {
+    "description": "Update appointment date time description"
+  },
+  "doctorAvailableFrom": "The doctor is available from",
+  "@doctorAvailableFrom": {
+    "description": "Doctor available from message"
+  },
+  "to": "to",
+  "@to": {
+    "description": "To label"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Date label"
+  },
+  "hour": "Hour",
+  "@hour": {
+    "description": "Hour label"
+  },
+  "hourFormat": "Time (HH:mm)",
+  "@hourFormat": {
+    "description": "Hour format label"
+  },
+  "hourFormatHint": "HH:mm (e.g. 19:59)",
+  "@hourFormatHint": {
+    "description": "Hour format hint"
+  },
+  "confirmation": "Confirm",
+  "@confirmation": {
+    "description": "Confirmation dialog title"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset button"
+  },
+  "fileDoesNotExist": "File does not exist",
+  "@fileDoesNotExist": {
+    "description": "File does not exist error"
+  },
+  "goodMorning": "Good morning",
+  "@goodMorning": {
+    "description": "Good morning greeting"
+  },
+  "goodAfternoon": "Good afternoon",
+  "@goodAfternoon": {
+    "description": "Good afternoon greeting"
+  },
+  "goodEvening": "Good evening",
+  "@goodEvening": {
+    "description": "Good evening greeting"
+  },
+  "openingAppointment": "Opening appointment",
+  "@openingAppointment": {
+    "description": "Opening appointment message"
+  },
+  "openingPrescription": "Opening prescription",
+  "@openingPrescription": {
+    "description": "Opening prescription message"
+  },
+  "issued": "Issued",
+  "@issued": {
+    "description": "Issued date label"
+  },
+  "downloadPdf": "Download PDF",
+  "@downloadPdf": {
+    "description": "Download PDF tooltip"
+  },
+  "urgentCases": "Urgent Cases",
+  "@urgentCases": {
+    "description": "Urgent cases label"
+  },
+  "highPriorityCases": "High priority cases",
+  "@highPriorityCases": {
+    "description": "High priority cases subtitle"
+  },
+  "allDoctors": "All Doctors",
+  "@allDoctors": {
+    "description": "All doctors filter"
+  },
+  "todaysSchedule": "Today's Schedule",
+  "@todaysSchedule": {
+    "description": "Today's schedule title"
+  },
+  "activeAppointments": "Active Appointments",
+  "@activeAppointments": {
+    "description": "Active appointments subtitle"
+  },
+  "patientsToday": "Patients today",
+  "@patientsToday": {
+    "description": "Patients today title"
+  },
+  "appointmentsList": "Appointments List",
+  "@appointmentsList": {
+    "description": "Appointments list title"
+  },
+  "viewAllAppointments": "View all appointments",
+  "@viewAllAppointments": {
+    "description": "View all appointments subtitle"
+  },
+  "doctorOverview": "Doctor Overview",
+  "@doctorOverview": {
+    "description": "Doctor overview title"
+  },
+  "upcomingAppointments": "Upcoming Appointments",
+  "@upcomingAppointments": {
+    "description": "Upcoming appointments title"
+  },
+  "recentAppointments": "Recent Appointments",
+  "@recentAppointments": {
+    "description": "Recent appointments title"
+  },
+  "recentPrescriptions": "Recent Prescriptions",
+  "@recentPrescriptions": {
+    "description": "Recent prescriptions title"
+  },
+  "receptionistOverview": "Receptionist Overview",
+  "@receptionistOverview": {
+    "description": "Receptionist overview title"
+  },
+  "pendingRequests": "Pending Requests",
+  "@pendingRequests": {
+    "description": "Pending requests title"
+  },
+  "medicalRecordDetails": "Medical Record Details",
+  "@medicalRecordDetails": {
+    "description": "Medical record details screen title"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details tab label"
+  },
+  "attachments": "Attachments",
+  "@attachments": {
+    "description": "Attachments tab label"
+  },
+  "addAttachment": "Add Attachment",
+  "@addAttachment": {
+    "description": "Add attachment button tooltip"
+  },
+  "generalInformation": "General Information",
+  "@generalInformation": {
+    "description": "General information section title"
+  },
+  "vitalSigns": "Vital Signs",
+  "@vitalSigns": {
+    "description": "Vital signs section title"
+  },
+  "bloodPressure": "Blood Pressure",
+  "@bloodPressure": {
+    "description": "Blood pressure label"
+  },
+  "weight": "Weight",
+  "@weight": {
+    "description": "Weight label"
+  },
+  "height": "Height",
+  "@height": {
+    "description": "Height label"
+  },
+  "temperature": "Temperature",
+  "@temperature": {
+    "description": "Temperature label"
+  },
+  "heartRate": "Heart Rate",
+  "@heartRate": {
+    "description": "Heart rate label"
+  },
+  "respiratoryRate": "Respiratory Rate",
+  "@respiratoryRate": {
+    "description": "Respiratory rate label"
+  },
+  "allergies": "Allergies",
+  "@allergies": {
+    "description": "Allergies section title"
+  },
+  "medicalInformation": "Medical Information",
+  "@medicalInformation": {
+    "description": "Medical information section title"
+  },
+  "symptoms": "Symptoms",
+  "@symptoms": {
+    "description": "Symptoms label"
+  },
+  "treatment": "Treatment",
+  "@treatment": {
+    "description": "Treatment label"
+  },
+  "notes": "Notes",
+  "@notes": {
+    "description": "Notes label"
+  },
+  "specialtyData": "Specialty Data",
+  "@specialtyData": {
+    "description": "Specialty data section title"
+  },
+  "noPrescriptions": "No Prescriptions",
+  "@noPrescriptions": {
+    "description": "No prescriptions message"
+  },
+  "noPrescriptionsRecorded": "No prescriptions have been recorded for this medical record",
+  "@noPrescriptionsRecorded": {
+    "description": "No prescriptions recorded message"
+  },
+  "prescriptionNumber": "Prescription #{number}",
+  "@prescriptionNumber": {
+    "description": "Prescription number label",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "medications": "Medications",
+  "@medications": {
+    "description": "Medications label"
+  },
+  "createdOn": "Created on",
+  "@createdOn": {
+    "description": "Created on label"
+  },
+  "noMedicalRecordsFoundForPatient": "No medical records found",
+  "@noMedicalRecordsFoundForPatient": {
+    "description": "No medical records found for patient message"
+  },
+  "startByCreatingFirstMedicalRecord": "Start by creating the first medical record for this patient",
+  "@startByCreatingFirstMedicalRecord": {
+    "description": "Start by creating first medical record message"
+  },
+  "newMedicalRecord": "New Medical Record",
+  "editMedicalRecord": "Edit Medical Record",
+  "patientAndDoctor": "Patient & Doctor",
+  "medicalDetails": "Medical Details",
+  "review": "Review",
+  "selectPatientDoctorAndSpecialty": "Select patient, doctor and specialty",
+  "createPatientHint": "Create a new patient to open a medical record.",
+  "createPatientButton": "Create Patient",
+  "selectASpecialty": "Select a specialty",
+  "manageSpecialties": "Manage specialties",
+  "editSpecialtyFields": "Edit fields for \"{name}\"",
+  "@editSpecialtyFields": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingSpecialties": "Error loading specialties",
+  "loadingSpecialtyFields": "Loading specialty fields...",
+  "cantFindSpecialty": "Can't find your specialty?",
+  "createOne": "Create one",
+  "goToSpecialtiesScreen": "Go to specialties screen",
+  "createSpecialtyTitle": "Create specialty",
+  "nameRequiredLabel": "Name *",
+  "descriptionLabel": "Description",
+  "specialtyDescriptionHint": "Specialty description",
+  "createButton": "Create",
+  "nameIsRequired": "Name is required",
+  "vitalSignsAndHistory": "Vital signs & history",
+  "enterPatientVitalSigns": "Enter patient vital signs",
+  "bloodPressureHint": "e.g. 120/80",
+  "weightKg": "Weight (kg)",
+  "heightCm": "Height (cm)",
+  "temperatureC": "Temperature (°C)",
+  "heartRateBpm": "Heart rate (bpm)",
+  "respiratoryRatePerMin": "Respiratory rate (/min)",
+  "bmiLabel": "BMI",
+  "doesPatientHaveAllergies": "Does patient have allergies?",
+  "yes": "Yes",
+  "no": "No",
+  "allergyDetails": "Allergy details",
+  "describeKnownAllergies": "Describe known allergies...",
+  "specialtySpecificFields": "Specialty-specific fields",
+  "addNewFieldFor": "Add new field for \"{name}\"",
+  "@addNewFieldFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "requiredField": "Required field",
+  "thisFieldRequired": "This field is required",
+  "pleaseEnterValidNumber": "Please enter a valid number",
+  "describeSymptomsDiagnosisTreatment": "Describe symptoms, diagnosis and treatment",
+  "symptomsHint": "Describe patient symptoms (optional)...",
+  "diagnosisHint": "Medical diagnosis (optional)...",
+  "treatmentHint": "Prescribed treatment plan (optional)...",
+  "additionalNotes": "Additional notes",
+  "additionalNotesHint": "Other observations or notes...",
+  "reviewAndSubmit": "Review & Submit",
+  "notSelected": "Not selected",
+  "notEntered": "Not entered",
+  "processing": "Processing...",
+  "updateButton": "Update",
+  "createRecordButton": "Create record",
+  "pleaseSelectPatientDoctorSpecialty": "Please select patient, doctor and specialty",
+  "medicalRecordUpdatedSuccess": "Medical record updated successfully",
+  "medicalRecordCreatedSuccess": "Medical record created successfully",
+  "noDoctorAvailable": "No doctor available. Please try again later.",
+  "patientCreatedContinueRecord": "Patient created. You can continue with the medical record.",
+  "pleaseFillRequiredField": "Please fill the required field: {fieldLabel}",
+  "@pleaseFillRequiredField": {
+    "placeholders": {
+      "fieldLabel": {
+        "type": "String"
+      }
+    }
+  },
+  "subscriptionsTitle": "Subscriptions",
+  "@subscriptionsTitle": {
+    "description": "Title for subscription management screen"
+  },
+  "manageSubscriptionsFor": "Manage subscriptions for {tenant}",
+  "@manageSubscriptionsFor": {
+    "description": "Subtitle showing tenant for subscription screen",
+    "placeholders": {
+      "tenant": {
+        "type": "String",
+        "example": "My Clinic"
+      }
+    }
+  },
+  "noActiveSubscription": "No active subscription",
+  "@noActiveSubscription": {
+    "description": "Banner title when no active subscription"
+  },
+  "noActiveSubscriptionDesc": "Your subscription is expired or inactive. Some features may be limited.",
+  "@noActiveSubscriptionDesc": {
+    "description": "Banner description when no active subscription"
+  },
+  "renewSamePlan": "Renew same plan",
+  "@renewSamePlan": {
+    "description": "Button text to renew same plan"
+  },
+  "choosePlan": "Choose a plan",
+  "@choosePlan": {
+    "description": "Button text to choose a new plan"
+  },
+  "pricePerInterval": "{price} / {interval}",
+  "@pricePerInterval": {
+    "description": "Price and interval formatting",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "199.00"
+      },
+      "interval": {
+        "type": "String",
+        "example": "monthly"
+      }
+    }
+  },
+  "startDate": "Start:",
+  "@startDate": {
+    "description": "Label for start date"
+  },
+  "endDate": "End:",
+  "@endDate": {
+    "description": "Label for end date"
+  },
+  "daysLeft": "{count} day(s) left",
+  "@daysLeft": {
+    "description": "Remaining days label",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "7"
+      }
+    }
+  },
+  "cancelSubscription": "Cancel subscription",
+  "@cancelSubscription": {
+    "description": "Cancel subscription button"
+  },
+  "upgradePlan": "Upgrade / change",
+  "@upgradePlan": {
+    "description": "Upgrade plan button"
+  },
+  "referralProgram": "Referral Program",
+  "referralShort": "Win",
+  "referralCodeCopied": "Referral code copied!",
+  "referralShareMessage": "Use my referral code: %s",
+  "referralShareAndEarn": "Share & Earn",
+  "referralYouEarnDays": "You earn %s days",
+  "referralFriendGetsDays": "Your friend gets %s days",
+  "referralYourCode": "Your referral code",
+  "referralCopyLink": "Copy link",
+  "referralShare": "Share",
+  "referralReferrals": "Referrals",
+  "referralPendingDays": "Pending days",
+  "referralApplyCode": "Apply referral code",
+  "referralHaveCode": "Have a referral code? Enter it to get free subscription days.",
+  "referralEnterCode": "Enter 8-character code",
+  "referralValidCode": "Valid code from",
+  "referralApplying": "Applying...",
+  "referralHistory": "Referral history",
+  "referralYouUsedCode": "You used a referral code",
+  "referralReferredBy": "From",
+  "referralReward": "Reward",
+  "referralDays": "days",
+  "referralPeopleYouReferred": "People you referred",
+  "referralNoReferralsYet": "No referrals yet. Share your code!",
+  "referralDialogInvite": "Invite friends & colleagues — everyone wins!",
+  "referralDialogYouEarn": "Share your code. You win free days. They win free days. Simple!",
+  "referralDialogShareLink": "Share your personal link from the Referral Program page.",
+  "referralDialogOpen": "Open Referral Program",
+  "referralDialogYourCode": "Your referral code",
+  "referralDialogYouWinDays": "You win %s days free!",
+  "referralDialogTheyGetDays": "They win %s days free!",
+  "referralPromoTitle": "Invite & earn free days",
+  "referralPromoSubtitle": "Share your referral link with colleagues",
+  "pendingStatus": "Pending",
+  "@pendingStatus": {
+    "description": "Status label for pending subscription"
+  },
+  "suspendedStatus": "Suspended",
+  "@suspendedStatus": {
+    "description": "Status label for suspended subscription"
+  },
+  "expiredStatus": "Expired",
+  "@expiredStatus": {
+    "description": "Status label for expired subscription"
+  },
+  "activeStatus": "Active",
+  "@activeStatus": {
+    "description": "Status label for active subscription"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
+  },
+  "years": "years",
+  "@years": {
+    "description": "Years label"
+  },
+  "newPatient": "New Patient",
+  "@newPatient": {
+    "description": "New patient button"
+  },
+  "fullName": "Full Name",
+  "@fullName": {
+    "description": "Full name field label"
+  },
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Name required validation message"
+  },
+  "male": "Male",
+  "@male": {
+    "description": "Male gender option"
+  },
+  "female": "Female",
+  "@female": {
+    "description": "Female gender option"
+  },
+  "address": "Address",
+  "@address": {
+    "description": "Address field label"
+  },
+  "insuranceType": "Insurance Type",
+  "@insuranceType": {
+    "description": "Insurance type field label"
+  },
+  "insuranceNumber": "Insurance Number",
+  "@insuranceNumber": {
+    "description": "Insurance number field label"
+  },
+  "service": "Service",
+  "@service": {
+    "description": "Service field label"
+  },
+  "availableTimeSlots": "Available Time Slots",
+  "@availableTimeSlots": {
+    "description": "Available time slots section header"
+  },
+  "highPriority": "High",
+  "@highPriority": {
+    "description": "High priority option"
+  },
+  "mediumPriority": "Medium",
+  "@mediumPriority": {
+    "description": "Medium priority option"
+  },
+  "lowPriority": "Low",
+  "@lowPriority": {
+    "description": "Low priority option"
+  },
+  "billingOptions": "Billing Options",
+  "@billingOptions": {
+    "description": "Billing options section header"
+  },
+  "generateInvoice": "Generate Invoice",
+  "@generateInvoice": {
+    "description": "Generate invoice checkbox"
+  },
+  "addAmount": "Add Amount",
+  "@addAmount": {
+    "description": "Add amount checkbox"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "description": "Amount field label"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Mark as paid checkbox"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications section header"
+  },
+  "whatsapp": "WhatsApp",
+  "@whatsapp": {
+    "description": "WhatsApp notification checkbox"
+  },
+  "optional": "Optional",
+  "@optional": {
+    "description": "Optional field label"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create button text"
+  },
+  "enterPatientName": "Enter Patient Name",
+  "@enterPatientName": {
+    "description": "Enter patient name title"
+  },
+  "enterPatientNameDescription": "Enter patient name, email or CNI number",
+  "@enterPatientNameDescription": {
+    "description": "Enter patient name description"
+  },
+  "enterPatientNameHint": "Enter patient name, email or CNI",
+  "@enterPatientNameHint": {
+    "description": "Enter patient name hint text"
+  },
+  "patientName": "Patient Name",
+  "@patientName": {
+    "description": "Patient name field label"
+  },
+  "atLeast2CharactersRequired": "At least 2 characters required",
+  "@atLeast2CharactersRequired": {
+    "description": "At least 2 characters required validation message"
+  },
+  "findPatient": "Next",
+  "@findPatient": {
+    "description": "Find patient button text"
+  },
+  "appointmentCreated": "Appointment Created!",
+  "@appointmentCreated": {
+    "description": "Appointment created success message"
+  },
+  "clinicInfo": "Clinic Info",
+  "@clinicInfo": {
+    "description": "Clinic Info menu item"
+  },
+  "aboutUs": "About us",
+  "@aboutUs": {
+    "description": "About us menu item"
+  },
+  "call": "Call",
+  "@call": {
+    "description": "Call button"
+  },
+  "followUs": "Follow Us",
+  "@followUs": {
+    "description": "Follow us section"
+  },
+  "ourServices": "Our Services",
+  "@ourServices": {
+    "description": "Our services section"
+  },
+  "workingHours": "Working Hours",
+  "@workingHours": {
+    "description": "Working hours section"
+  },
+  "closed": "Closed",
+  "@closed": {
+    "description": "Closed status"
+  },
+  "monday": "Monday",
+  "@monday": {
+    "description": "Monday"
+  },
+  "tuesday": "Tuesday",
+  "@tuesday": {
+    "description": "Tuesday"
+  },
+  "wednesday": "Wednesday",
+  "@wednesday": {
+    "description": "Wednesday"
+  },
+  "thursday": "Thursday",
+  "@thursday": {
+    "description": "Thursday"
+  },
+  "friday": "Friday",
+  "@friday": {
+    "description": "Friday"
+  },
+  "saturday": "Saturday",
+  "@saturday": {
+    "description": "Saturday"
+  },
+  "sunday": "Sunday",
+  "@sunday": {
+    "description": "Sunday"
+  },
+  "seeClinicInfo": "See Clinic Info",
+  "@seeClinicInfo": {
+    "description": "Button to navigate to clinic info screen"
+  },
+  "map": "Map",
+  "@map": {
+    "description": "Label for map button"
+  },
+  "healthOverview": "Health Overview",
+  "upcomingVisitsStat": "Upcoming Visits",
+  "scheduledAppointmentsStat": "Scheduled Appointments",
+  "unpaidInvoicesStat": "Unpaid Invoices",
+  "activePrescriptionsStat": "Active Prescriptions",
+  "inProgressStat": "In progress",
+  "myCalendarStat": "My Calendar",
+  "agendaStat": "Agenda",
+  "manageMyDatesStat": "Manage my dates",
+  "yourPrescriptionsSection": "Your Prescriptions",
+  "medication": "Medication",
+  "medications": "Medications",
+  "days": "days",
+  "timesPerDay": "x/day",
+  "more": "more",
+  "noMedicationsRecorded": "No medications recorded",
+  "prescriptionLabel": "Prescription",
+  "upcoming": "Upcoming",
+  "@upcoming": {
+    "description": "Upcoming tab label"
+  },
+  "past": "Past",
+  "@past": {
+    "description": "Past tab label"
+  },
+  "patientInformation": "Patient Information",
+  "@patientInformation": {
+    "description": "Patient information section title"
+  },
+  "followUpDate": "Follow-up Date",
+  "@followUpDate": {
+    "description": "Follow-up date label"
+  },
+  "noMedications": "No medications",
+  "@noMedications": {
+    "description": "No medications message"
+  },
+  "notThisPatient": "Not this patient? Search again or add manually",
+  "@notThisPatient": {
+    "description": "Button text to clear patient selection and search again"
+  }
+}
