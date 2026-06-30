@@ -1780,7 +1780,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen>
       final platform = entry.key.toLowerCase();
       final url = entry.value.toString();
 
-      IconData icon;
+      FaIconData icon;
       Color iconColor;
 
       switch (platform) {
@@ -1832,7 +1832,7 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen>
   }
 
   Widget _buildMiniIcon({
-    required IconData icon,
+    required Object icon,
     required Color color,
     required VoidCallback onTap,
     required bool isDark,
@@ -1860,8 +1860,8 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen>
         ),
         child: Center(
           child: isFa
-              ? FaIcon(icon, color: color, size: 16)
-              : Icon(icon, color: color, size: 16),
+              ? FaIcon(icon as FaIconData, color: color, size: 16)
+              : Icon(icon as IconData, color: color, size: 16),
         ),
       ),
     );

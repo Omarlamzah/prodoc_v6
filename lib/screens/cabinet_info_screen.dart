@@ -1382,7 +1382,7 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
 
   Widget _buildActionButton({
     required BuildContext context,
-    required IconData icon,
+    required Object icon,
     required String label,
     required Color color,
     required VoidCallback onTap,
@@ -1402,7 +1402,9 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
           ),
           child: Column(
             children: [
-              Icon(icon, color: color),
+              icon is FaIconData
+                  ? FaIcon(icon, color: color)
+                  : Icon(icon as IconData, color: color),
               const SizedBox(height: 4),
               Text(
                 label,
@@ -1447,7 +1449,7 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
             final platform = entry.key.toLowerCase();
             final url = entry.value.toString();
 
-            IconData icon;
+            FaIconData icon;
             Color iconColor;
 
             switch (platform) {
@@ -1677,7 +1679,7 @@ class _CabinetInfoScreenState extends ConsumerState<CabinetInfoScreen> {
   Widget _buildSectionCard({
     required BuildContext context,
     required bool isDark,
-    required IconData icon,
+    required FaIconData icon,
     required String title,
     required List<Widget> children,
   }) {
