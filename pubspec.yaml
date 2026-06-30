@@ -82,7 +82,7 @@ dependencies:
   google_mlkit_face_detection: ^0.13.1
   camera: ^0.11.0+2
   manual_speech_to_text: ^1.0.4
-  font_awesome_flutter: ^10.12.0
+  font_awesome_flutter: ^11.0.0
   flutter_tts: ^4.1.0
   flutter_markdown: ^0.6.18
   webview_flutter: ^4.10.0
