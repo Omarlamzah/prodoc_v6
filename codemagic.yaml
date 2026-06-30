@@ -45,3 +45,5 @@ workflows:
         notify:
           success: true
           failure: true
+      app_store_connect:
+        auth: integration
