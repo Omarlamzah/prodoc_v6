@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../data/models/subscription_model.dart';
@@ -30,6 +31,8 @@ class _SubscriptionManagementScreenState
   String? _tenant;
 
   final List<String> _activeStatuses = const ['active', 'trialing'];
+
+  bool get _isIOS => !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
 
   @override
   void initState() {
@@ -218,6 +221,32 @@ class _SubscriptionManagementScreenState
   }
 
   Widget _buildNoActiveSubscriptionBanner(AppLocalizations? localizations) {
+    if (_isIOS) {
+      return Card(
+        elevation: 1,
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                localizations?.noActiveSubscription ?? 'Aucun abonnement actif',
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17,
+                ),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                'Les abonnements ProDoc sont gérés par votre cabinet. '
+                'Contactez l\'administrateur de votre organisation ou le support ProDoc pour obtenir de l\'aide.',
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     return Card(
       elevation: 1,
       shape: RoundedRectangleBorder(
@@ -419,24 +448,28 @@ class _SubscriptionManagementScreenState
               ),
               const SizedBox(height: 8),
               Text(
-                AppLocalizations.of(context)?.noActiveSubscriptionDesc ??
-                    'Souscrivez à un plan pour activer les fonctionnalités premium.',
+                _isIOS
+                    ? 'Contactez l\'administrateur de votre cabinet pour obtenir de l\'aide.'
+                    : (AppLocalizations.of(context)?.noActiveSubscriptionDesc ??
+                        'Souscrivez à un plan pour activer les fonctionnalités premium.'),
               ),
-              const SizedBox(height: 8),
-              Text(
-                'Vos données sont en sécurité. L\'accès est restauré dès le paiement.',
-                style: TextStyle(
-                  fontSize: 13,
-                  color: Colors.green.shade700,
-                  fontStyle: FontStyle.italic,
+              if (!_isIOS) ...[
+                const SizedBox(height: 8),
+                Text(
+                  'Vos données sont en sécurité. L\'accès est restauré dès le paiement.',
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: Colors.green.shade700,
+                    fontStyle: FontStyle.italic,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 12),
-              ElevatedButton(
-                onPressed: () => _openPlans('nouveau'),
-                child: Text(AppLocalizations.of(context)?.choosePlan ??
-                    'Choisir un plan'),
-              ),
+                const SizedBox(height: 12),
+                ElevatedButton(
+                  onPressed: () => _openPlans('nouveau'),
+                  child: Text(AppLocalizations.of(context)?.choosePlan ??
+                      'Choisir un plan'),
+                ),
+              ],
             ],
           ),
         ),
@@ -465,14 +498,16 @@ class _SubscriptionManagementScreenState
               ],
             ),
             const SizedBox(height: 8),
-            Text(
-              (AppLocalizations.of(context)?.pricePerInterval(
-                      current.planPrice.toStringAsFixed(2),
-                      current.planInterval)) ??
-                  '${current.planPrice.toStringAsFixed(2)} / ${current.planInterval}',
-              style: const TextStyle(fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 8),
+            if (!_isIOS) ...[
+              Text(
+                (AppLocalizations.of(context)?.pricePerInterval(
+                        current.planPrice.toStringAsFixed(2),
+                        current.planInterval)) ??
+                    '${current.planPrice.toStringAsFixed(2)} / ${current.planInterval}',
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 8),
+            ],
             Text(
                 '${AppLocalizations.of(context)?.startDate ?? 'Début :'} ${_formatDate(current.startedAt)}'),
             Text(
@@ -486,55 +521,63 @@ class _SubscriptionManagementScreenState
                   fontWeight: FontWeight.w600,
                 ),
               ),
-            const SizedBox(height: 12),
-            // Use Wrap to prevent overflow - buttons will wrap to next line if needed
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                if (current.isActive &&
-                    _activeStatuses.contains(current.status))
-                  OutlinedButton.icon(
-                    onPressed:
-                        _processing ? null : () => _handleCancel(current.id),
-                    icon: const Icon(Icons.cancel),
-                    label: Text(
-                        AppLocalizations.of(context)?.cancelSubscription ??
-                            'Annuler l\'abonnement'),
-                  ),
-                // Show renew button if can renew (expired/cancelled OR active but expiring in <= 3 days)
-                if (_canRenew)
-                  ElevatedButton.icon(
-                    onPressed: _processing ? null : _handleRenew,
-                    icon: const Icon(Icons.refresh),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      foregroundColor: Colors.white,
+            if (_isIOS) ...[
+              const SizedBox(height: 12),
+              const Text(
+                'Cet abonnement professionnel est géré par votre cabinet.',
+                style: TextStyle(fontStyle: FontStyle.italic),
+              ),
+            ] else ...[
+              const SizedBox(height: 12),
+              // Use Wrap to prevent overflow - buttons will wrap to next line if needed
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  if (current.isActive &&
+                      _activeStatuses.contains(current.status))
+                    OutlinedButton.icon(
+                      onPressed:
+                          _processing ? null : () => _handleCancel(current.id),
+                      icon: const Icon(Icons.cancel),
+                      label: Text(
+                          AppLocalizations.of(context)?.cancelSubscription ??
+                              'Annuler l\'abonnement'),
                     ),
-                    label: Text(
-                      _processing
-                          ? (AppLocalizations.of(context)?.loading ??
-                              'Traitement...')
-                          : (AppLocalizations.of(context)?.renewSamePlan ??
-                              'Renouveler le même plan'),
+                  // Show renew button if can renew (expired/cancelled OR active but expiring in <= 3 days)
+                  if (_canRenew)
+                    ElevatedButton.icon(
+                      onPressed: _processing ? null : _handleRenew,
+                      icon: const Icon(Icons.refresh),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        foregroundColor: Colors.white,
+                      ),
+                      label: Text(
+                        _processing
+                            ? (AppLocalizations.of(context)?.loading ??
+                                'Traitement...')
+                            : (AppLocalizations.of(context)?.renewSamePlan ??
+                                'Renouveler le même plan'),
+                      ),
                     ),
-                  ),
-                // Only show upgrade button if user doesn't have active subscription OR subscription expires in more than 3 days
-                if (!_hasActive ||
-                    (current.isActive &&
-                        _activeStatuses.contains(current.status) &&
-                        (_daysLeft(current) == null ||
-                            (_daysLeft(current) ?? 0) > 3)))
-                  ElevatedButton.icon(
-                    onPressed: _processing
-                        ? null
-                        : () => _openPlans('mettre à niveau'),
-                    icon: const Icon(Icons.upgrade),
-                    label: Text(AppLocalizations.of(context)?.upgradePlan ??
-                        'Mettre à niveau / changer'),
-                  ),
-              ],
-            ),
+                  // Only show upgrade button if user doesn't have active subscription OR subscription expires in more than 3 days
+                  if (!_hasActive ||
+                      (current.isActive &&
+                          _activeStatuses.contains(current.status) &&
+                          (_daysLeft(current) == null ||
+                              (_daysLeft(current) ?? 0) > 3)))
+                    ElevatedButton.icon(
+                      onPressed: _processing
+                          ? null
+                          : () => _openPlans('mettre à niveau'),
+                      icon: const Icon(Icons.upgrade),
+                      label: Text(AppLocalizations.of(context)?.upgradePlan ??
+                          'Mettre à niveau / changer'),
+                    ),
+                ],
+              ),
+            ],
           ],
         ),
       ),
@@ -585,7 +628,8 @@ class _SubscriptionManagementScreenState
                     style: const TextStyle(fontSize: 16),
                   ),
                   const SizedBox(height: 16),
-                  if (!_hasActive) _buildNoActiveSubscriptionBanner(localizations),
+                  if (!_hasActive)
+                    _buildNoActiveSubscriptionBanner(localizations),
                   _buildCurrentCard(),
                   if (_subscriptions.length > 1) ...[
                     const SizedBox(height: 12),
@@ -607,7 +651,7 @@ class _SubscriptionManagementScreenState
                 ],
               ),
             ),
-      bottomSheet: _showPlanSheet
+      bottomSheet: !_isIOS && _showPlanSheet
           ? _PlanSheet(
               actionType: _actionType,
               plans: _actionType == 'mettre à niveau' ? _upgradePlans : _plans,
@@ -730,12 +774,15 @@ class _PlanSheet extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Expanded(
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 plan.name,
@@ -750,18 +797,23 @@ class _PlanSheet extends StatelessWidget {
                                                 style: TextStyle(
                                                   fontSize: 15,
                                                   fontWeight: FontWeight.w600,
-                                                  color: Theme.of(context).colorScheme.primary,
+                                                  color: Theme.of(context)
+                                                      .colorScheme
+                                                      .primary,
                                                 ),
                                               ),
-                                              if ((plan.description ?? '').isNotEmpty) ...[
+                                              if ((plan.description ?? '')
+                                                  .isNotEmpty) ...[
                                                 const SizedBox(height: 4),
                                                 Text(
                                                   plan.description ?? '',
                                                   maxLines: 2,
-                                                  overflow: TextOverflow.ellipsis,
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
                                                   style: TextStyle(
                                                     fontSize: 13,
-                                                    color: Theme.of(context).hintColor,
+                                                    color: Theme.of(context)
+                                                        .hintColor,
                                                   ),
                                                 ),
                                               ],
@@ -777,39 +829,58 @@ class _PlanSheet extends StatelessWidget {
                                           ? ElevatedButton.icon(
                                               onPressed: processing
                                                   ? null
-                                                  : () => onPayWithPayPal!(plan),
-                                              icon: const Icon(Icons.credit_card, size: 20),
+                                                  : () =>
+                                                      onPayWithPayPal!(plan),
+                                              icon: const Icon(
+                                                  Icons.credit_card,
+                                                  size: 20),
                                               label: Text(
                                                 processing
-                                                    ? (localizations?.loading ?? '...')
+                                                    ? (localizations?.loading ??
+                                                        '...')
                                                     : 'Payer par carte ou PayPal',
-                                                style: const TextStyle(fontSize: 15),
+                                                style: const TextStyle(
+                                                    fontSize: 15),
                                               ),
                                               style: ElevatedButton.styleFrom(
-                                                backgroundColor: const Color(0xFF0070ba),
+                                                backgroundColor:
+                                                    const Color(0xFF0070ba),
                                                 foregroundColor: Colors.white,
-                                                padding: const EdgeInsets.symmetric(vertical: 14),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        vertical: 14),
                                                 shape: RoundedRectangleBorder(
-                                                  borderRadius: BorderRadius.circular(10),
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
                                                 ),
                                               ),
                                             )
                                           : ElevatedButton(
-                                              onPressed: processing || onSelect == null
-                                                  ? null
-                                                  : () => onSelect!(plan),
+                                              onPressed:
+                                                  processing || onSelect == null
+                                                      ? null
+                                                      : () => onSelect!(plan),
                                               style: ElevatedButton.styleFrom(
-                                                padding: const EdgeInsets.symmetric(vertical: 14),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                        vertical: 14),
                                                 shape: RoundedRectangleBorder(
-                                                  borderRadius: BorderRadius.circular(10),
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
                                                 ),
                                               ),
                                               child: Text(
                                                 processing
-                                                    ? (localizations?.loading ?? '...')
-                                                    : (actionType == 'mettre à niveau'
-                                                        ? (localizations?.upgradePlan ?? 'Changer')
-                                                        : (localizations?.choosePlan ?? 'Souscrire')),
+                                                    ? (localizations?.loading ??
+                                                        '...')
+                                                    : (actionType ==
+                                                            'mettre à niveau'
+                                                        ? (localizations
+                                                                ?.upgradePlan ??
+                                                            'Changer')
+                                                        : (localizations
+                                                                ?.choosePlan ??
+                                                            'Souscrire')),
                                               ),
                                             ),
                                     ),
